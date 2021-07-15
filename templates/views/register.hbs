@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<body>
+    {{>navbar}}
+
+    <section class="signup">
+        <div class="container mt-5">
+            <div class="signup-content">
+                <div class="signup-form">
+                    <h2 class="form-title">Registration</h2>
+                    <form method="POST"  action="/register" class="register-form" id="register-form">
+
+                        <div class="form-group">
+                            <label htmlFor="name">
+                                <i class="zmdi zmdi-account material-icons-name"></i>
+                            </label>
+                            <input type="text" name="name" id="name" autocomplete="off" value = ""
+                                placeholder="Your Name"  />
+                        </div>
+
+                        <div class="form-group">
+                            <label htmlFor="email">
+                                <i class="zmdi zmdi-email material-icons-name"></i>
+                            </label>
+                            <input type="email" name="email" id="email" autoComplete="off" value = ""
+                                placeholder="Your Email"   />
+                        </div>
+
+                        <div class="form-group">
+                            <label htmlFor="phone">
+                                <i class="zmdi zmdi-phone-in-talk material-icons-name"></i>
+                            </label>
+                            <input type="number" name="phone" id="phone" autoComplete="off" value = ""
+                                placeholder="Your Phone" />
+                        </div>
+
+                        <div class="form-group">
+                            <label htmlFor="work">
+                                <i class="zmdi zmdi-slideshow material-icons-name"></i>
+                            </label>
+                            <input type="text" name="work" id="work" autoComplete="off" value= ""
+                                placeholder="Your Profession" />
+                        </div>
+
+                        <div class="form-group">
+                            <label htmlFor="password">
+                                <i class="zmdi zmdi-lock material-icons-name"></i>
+                            </label>
+                            <input type="password" name="password" id="password" autoComplete="off"
+                                value = ""  placeholder="Your Password"  />
+                        </div>
+
+                        <div class="form-group">
+                            <label htmlFor="cpassword">
+                                <i class="zmdi zmdi-lock material-icons-name"></i>
+                            </label>
+                            <input type="password" name="confirmpassword" id="cpassword" autoComplete="off"
+                                value = "" placeholder="Confirm Your Password" />
+                        </div>
+
+                        <div class="form-group form-button">
+                            <input type="submit" name="signup" id="signup" class="form-submit" value="register"
+                                 />
+                        </div>
+                         
+
+                    </form>
+                    <a href ="/login" class="text-center  new-account">I am already registerd</a>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
